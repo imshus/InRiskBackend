@@ -28,7 +28,6 @@ jobs:
         pip install -r requirements.txt
 
     # Step 4: Run tests
-    # Step 4: Run tests
     - name: Run tests
       shell: /usr/bin/bash -e {0}
       env:
