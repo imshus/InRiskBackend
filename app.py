@@ -19,8 +19,8 @@ openmeteo = openmeteo_requests.Client(session=retry_session)
 url = "https://archive-api.open-meteo.com/v1/archive"
 
 # Configure GCS
-GCS_BUCKET_NAME = 'inriskbackend'
-GOOGLE_APPLICATION_CREDENTIALS = 'imshu-439710-c17ba7008b62.json'
+GCS_BUCKET_NAME = os.getenv("GCS_BUCKET_NAME")
+GOOGLE_APPLICATION_CREDENTIALS = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
 
 # Ensure credentials are set
 if not GOOGLE_APPLICATION_CREDENTIALS:
