@@ -32,13 +32,6 @@ jobs:
     - name: Run tests
       shell: /usr/bin/bash -e {0}
       env:
-        pythonLocation: /opt/hostedtoolcache/Python/3.9.20/x64
-        PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.9.20/x64/lib/pkgconfig
-        Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.20/x64
-        Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.20/x64
-        Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.9.20/x64
-        LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.9.20/x64/lib
-
         GCS_BUCKET_NAME: inriskbackend
         GOOGLE_APPLICATION_CREDENTIALS: imshu-439710-c17ba7008b62.json
       run: pytest  # Run the tests
